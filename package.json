@@ -17,13 +17,13 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
 
-"homepage": "https://github.com/OfcDiego/LuffyBot-MD",
+"homepage": "https://github.com/Jesusoo000/NilouBot-MD",
 "author": {
 "name": "Dɪᴇɢᴏ.Oғᴄ" },
 
 "repository": {
 "type": "git",
-"url": "git+https://github.com/OfcDiego/LuffyBot-MD.git" },
+"url": "git+https://github.com/Jesusoo000/NilouBot-MD" },
 
 "bugs": {
 "url": "https://github.com/OfcDiego/LuffyBot-MD/issues" },
