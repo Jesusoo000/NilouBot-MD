@@ -46,7 +46,7 @@ global.gp3 = 'https://chat.whatsapp.com/FstvjiTG22I6d48jtEDVii' //Diabla Y Nilou
 global.gp4 = 'https://chat.whatsapp.com/BQ8eHh74xDQ1ny0nuL95V2' //KiraBot Y NilouBot
 global.channel = 'https://www.whatsapp.com/channel/0029VajIId22phHQLslZah1n' //Canal Oficial
 global.yt = 'https://www.youtube.com/channel/UCbcVZrZQLNaeyNXOq_jB-2g' //Canal De Youtube
-global.md = 'https://github.com/OfcDiego/LuffyBot-MD' //Github Oficial
+global.md = 'https://github.com/Jesusoo000/NilouBot-MD' //Github Oficial
 global.fb = 'https://www.facebook.com/EnzoMatiasJesusVaselevich' //Facebook Del Propietario
 global.tiktok = 'https://www.tiktok.com/@enzito_ofcial' //Cuenta tiktok
 
