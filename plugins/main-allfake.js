@@ -32,12 +32,12 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 //let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
 
 //creador y otros
-global.creador = 'Wa.me/573012482597'
+global.creador = 'Wa.me/5491168758497'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
-global.asistencia = 'Wa.me/51939041500'
-global.namechannel = '✨️ 𝗟𝘂𝗳𝗳𝘆 𝗕𝗼𝘁 - 𝗠𝗗​᭄ ᎪΝႮΝᏟᏆϴՏ'
-global.colab1 = '𝗚𝗮𝘁𝗮𝗕𝗼𝘁 & 𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁'
-global.colab2 = '𝗦𝗵𝗶𝘇𝘂𝗸𝗮𝗕𝗼𝘁 & 𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁'
+global.asistencia = 'Wa.me/5492215034412'
+global.namechannel = '✨️ ᴺⁱˡᵒᵘᴮᵒᵗ⁻ᴹᴰ​᭄ ᎪΝႮΝᏟᏆϴՏ'
+global.colab1 = '𝐃𝐢𝐚𝐛𝐥𝐚𝐁𝐨𝐭 & 𝐍𝐢𝐥𝐨𝐮𝐁𝐨𝐭'
+global.colab2 = '𝐊𝐢𝐫𝐚𝐁𝐨𝐭 & 𝐍𝐢𝐥𝐨𝐮𝐁𝐨𝐭'
 
 //Reacciones De Comandos.!
 global.rwait = '⏱️'
@@ -51,14 +51,14 @@ global.waittt = '*⏱️ 𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 global.waitttt = '*⏱️ 𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗼 ...*';
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' 
-var canal2 = 'https://whatsapp.com/channel/0029VaXaCa66xCSHugaf773M' 
-var grupofb = 'https://www.facebook.com/groups/872989990425789/?ref=share&mibextid=NSMWBT' 
-var git = 'https://github.com/OfcDiego' 
-var youtube = 'https://www.youtube.com/@OfcDiego' 
-var github = 'https://github.com/OfcDiego/LuffyBot-MD' 
-var facebook = 'https://www.facebook.com/diegosaroficial?mibextid=ZbWKwL' 
-let tiktok = 'https://tiktok.com/@theluffybot'
+var canal = 'https://www.whatsapp.com/channel/0029VajIId22phHQLslZah1n' 
+var canal2 = 'https://www.whatsapp.com/channel/0029VajIId22phHQLslZah1n' 
+var grupofb = '' 
+var git = 'https://github.com/EnzoVaselevich' 
+var youtube = 'https://www.youtube.com/@Enzito-19' 
+var github = 'https://github.com/Jesusoo000/NilouBot-MD' 
+var facebook = 'https://www.facebook.com/EnzoMatiasJesusVaselevich' 
+let tiktok = 'https://www.tiktok.com/@enzito_ofcial'
 
 global.redes = [canal, canal2, grupofb, git, youtube, github, facebook, tiktok].getRandom()
 
@@ -89,7 +89,7 @@ global.fkontak = { key: { participants:"0@s.whatsapp.net", "remoteJid": "status@
 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
 
-let icono = ['https://qu.ax/ljre.jpg', 'https://qu.ax/vQmu.jpg'].getRandom()
+let icono = ['https://telegra.ph/file/a529f97df819f2599f977.jpg', 'https://telegra.ph/file/fd89f02fee58a2520cfd8.jpg'].getRandom()
 
 global.rcanal = {
 contextInfo: {
@@ -97,12 +97,12 @@ isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363263466636910@newsletter",
 serverMessageId: 100,
-newsletterName: 'Luffy Bot - Channel 🚩',
+newsletterName: 'Nilou Bot - Channel 🌸',
 },
 externalAdReply: {
 showAdAttribution: true,
 title: packname,
-body: '🚩 Luffy Bot Canal 🐢',
+body: '🌸 Nilou Bot Canal 🌸',
 mediaUrl: null,                                   description: null,                                       previewType: "PHOTO",                                        thumbnailUrl: icono,
 sourceUrl: redes,
 mediaType: 1,
