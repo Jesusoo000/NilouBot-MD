@@ -31,7 +31,7 @@ let tags = {
 const defaultMenu = {
   before: `*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
 
-“ Hola *%name*, mi nombre es *LuffyBot*, Cómo se encuentra el día de hoy?  ”
+“ Hola *%name*, mi nombre es *NilouBot*, Cómo se encuentra el día de hoy?  ”
 
 *╭──⬣「 Info User 」⬣*
 *│* ✰ 💌 *Cliente:* %name
