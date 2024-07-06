@@ -29,7 +29,7 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
+  before: `*✧♬•*¨*•.｡｡.•*¨*•♬✧*
 
 “Hola *%name*, mi nombre es *NilouBot*, Cómo se encuentra el día de hoy?”
 
@@ -51,7 +51,7 @@ const defaultMenu = {
 *╰──⬣*
 
 %readmore
-*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
+*✧♬•*¨*•.｡｡.•*¨*•♬✧*
 
 \t*L I S T  -  C O M M A N D S* 
 `.trimStart(),
