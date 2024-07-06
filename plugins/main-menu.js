@@ -4,28 +4,28 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': 'Info 📚',
-  'buscador': 'Busquedas 🔎',
-  'fun': 'Juegos 🎮',
-  'jadibot': 'Sub Bots 🤖',
-  'rpg': 'RPG 🌠',
-  'rg': 'Registro 📁',
-  'xp': 'Exp 🏷',
-  'sticker': 'Stickers 🏞',
-  'database': 'Database ✨️',
-  'fix': 'Fixmsgespera 💭',
-  'grupo': 'Grupos 👥',
-  'nable': 'On / Off 📴', 
-  'descargas': 'Descargas 📥',
-  'youtube': 'Youtube Play 📥',
-  'tools': 'Herramientas 🔧',
-  'info': 'Información 🐢',
-  'nsfw': 'Nsfw 🔞', 
-  'owner': 'Creador 👑', 
-  'mods': 'Staff Luffy 🚩',
-  'audio': 'Audios 🔉', 
-  'ai': 'Ai 🌹',
-  'transformador': 'Convertidores 💠',
+  'main': '𝗜𝗻𝗳𝗼 📚',
+  'buscador': '𝗕𝘂𝘀𝗾𝘂𝗲𝗱𝗮𝘀 🔎',
+  'fun': '𝗝𝘂𝗲𝗴𝗼𝘀 🎮',
+  'jadibot': '𝗦𝘂𝗯 𝗕𝗼𝘁𝘀 🤖',
+  'rpg': '𝗥𝗣𝗚 🌠',
+  'rg': '𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗼 📁',
+  'xp': '𝗘𝘅𝗽 🏷',
+  'sticker': '𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝘀 🏞',
+  'database': '𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 ✨️',
+  'fix': '𝗙𝗶𝘅𝗺𝘀𝗴𝗲𝘀𝗽𝗲𝗿𝗮 💭',
+  'grupo': '𝗚𝗿𝘂𝗽𝗼𝘀 👥',
+  'nable': '𝗢𝗻 / 𝗢𝗳𝗳 📴', 
+  'descargas': '𝗗𝗲𝘀𝗰𝗮𝗿𝗴𝗮𝘀 📥',
+  'youtube': '𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗣𝗹𝗮𝘆 📥',
+  'tools': '𝗛𝗲𝗿𝗿𝗮𝗺𝗶𝗲𝗻𝘁𝗮𝘀 🔧',
+  'info': '𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝗰𝗶𝗼𝗻 🐢',
+  'nsfw': '𝗡𝘀𝗳𝘄 🔞', 
+  'owner': '𝗖𝗿𝗲𝗮𝗱𝗼𝗿 👑', 
+  'mods': '𝗦𝘁𝗮𝗳𝗳 𝗟𝘂𝗳𝗳𝘆 🚩',
+  'audio': '𝗔𝘂𝗱𝗶𝗼𝘀 🔉', 
+  'ai': '𝗔𝗶 🌹',
+  'transformador': '𝗖𝗼𝗻𝘃𝗲𝗿𝘁𝗶𝗱𝗼𝗿𝗲𝘀 💠',
 }
 
 const defaultMenu = {
@@ -33,20 +33,20 @@ const defaultMenu = {
 
 “ Hola *%name*, mi nombre es *NilouBot*, Cómo se encuentra el día de hoy?  ”
 
-*╭──⬣「 Info User 」⬣*
-*│* ✰ 💌 *Cliente:* %name
-*│* ✰ ⚡️ *Exp:* %exp
-*│* ✰ 🌟 *Estrellas:* %estrellas
-*│* ✰ 🐢 *Nivel:* %level
-*│* ✰ ⚓ *Rango:* %role
+*╭──⬣「 𝐈𝐧𝐟𝐨 𝐔𝐬𝐞𝐫 」⬣*
+*│* ✰ 💌 *𝐂𝐥𝐢𝐞𝐧𝐭𝐞:* %name
+*│* ✰ ⚡️ *𝐄𝐱𝐩:* %exp
+*│* ✰ 🌟 *𝐄𝐬𝐭𝐫𝐞𝐥𝐥𝐚𝐬:* %estrellas
+*│* ✰ 🐢 *𝐍𝐢𝐯𝐞𝐥:* %level
+*│* ✰ ⚓ *𝑹𝒂𝒏𝒈𝒐:* %role
 *╰──⬣*
 
-*╭──⬣「 Info Bot 」⬣*
-*│* ✰ ⚡️ *Bot:* Nilou Bot - MD 
-*│* ✰ 🚩 *Modo* Público
-*│* ✰ 📚 *Baileys:* Multi Device
-*│* ✰ ⏱️ *Tiempo Activo:* %muptime
-*│* ✰ 👤 *Usuarios:* %totalreg
+*╭──⬣「 𝑰𝒏𝒇𝒐 𝑩𝒐𝒕 」⬣*
+*│* ✰ ⚡️ *𝑩𝒐𝒕:* Nilou Bot - MD 
+*│* ✰ 🚩 *𝑴𝒐𝒅𝒐* Público
+*│* ✰ 📚 *𝑩𝒂𝒊𝒍𝒆𝒚𝒔:* Multi Device
+*│* ✰ ⏱️ *𝑻𝒊𝒆𝒎𝒑𝒐 Activo:* %muptime
+*│* ✰ 👤 *𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* %totalreg
 *╰──⬣*
 
 %readmore
