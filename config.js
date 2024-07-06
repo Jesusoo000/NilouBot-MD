@@ -12,27 +12,26 @@ global.confirmCode = ""
 
 //• ↳𝑺𝑶𝑳𝑶 𝑫𝑬𝑺𝑨𝑹𝑹𝑶𝑳𝑳𝑨𝑫𝑶𝑹𝑬𝑺 𝑨𝑷𝑹𝑶𝑩𝑨𝑫𝑶𝑺
 global.owner = [
-['573012482597', '👑 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 👑', true],
-['51935499065', '𝗢𝘄𝗻𝗲𝗿 👑', true], 
-['595983799436']]
+['5491168758497', '🌸 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🍁', true],
+['5492215034412', '𝐌𝐚𝐭𝐢𝐚𝐬-𝐂𝐫𝐲𝐩𝐭𝐨 𝐎𝐰𝐧𝐞𝐫 💫', true]]
 
 //• ↳𝑺𝑶𝑳𝑶 𝑴𝑶𝑫𝑬𝑹𝑨𝑫𝑶𝑹𝑬𝑺!
-global.mods = ['59169082575', '5492355505090', '51939041500', '51929972576', '59168106005', '525610314499']
+global.mods = ['5491168758497']
 
-global.suittag = ['573012482597']
+global.suittag = ['5491168758497']
 global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packname = '⪛✰ 𝐋𝐮𝐟𝐟𝐲 𝐁𝐨𝐭 - 𝐌𝐃 ✰⪜'
-global.author = 'Oғᴄ.Dɪᴇɢᴏ 👑'
-global.wm = '✨◌*̥₊ LᴜғғʏBᴏᴛ-MD ◌❐⚡༉'
-global.titulowm = 'LuffyBot-MD ✨️'
-global.titulowm2 = 'Ofc.Diego'
-global.igfg = '𝙾𝙵𝙲.𝙳𝙸𝙴𝙶𝙾'
-global.botname = 'Lᴜғғʏ Bᴏᴛ - MD 💫'
-global.team = '♋︎ 𝐃𝙴𝚅 𝐖𝙾𝚁𝙻𝙳 - 𝐓𝙴𝙰𝙼 ♋︎'
-global.dev = '👑 Developed By • ✨ Ofc.Diego'
-global.textbot = '𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁 : 𝗢𝗳𝗰𝗗𝗶𝗲𝗴𝗼 🌻🐈'
+global.packname = '⪛✰ 𝐍𝐢𝐥𝐨𝐮𝐁𝐨𝐭-𝐌𝐃 🌸 ✰⪜'
+global.author = 'Enzito 🌼'
+global.wm = '🌹 𝒩𝒾𝓁𝑜𝓊𝐵𝑜𝓉-𝑀𝒟 🪷'
+global.titulowm = '🌸 𝓝𝓲𝓵𝓸𝓾𝓑𝓸𝓽-𝓜𝓓 💖'
+global.titulowm2 = 'Enzito-Ofc'
+global.igfg = 'ENZITO-OfC'
+global.botname = '𝙉𝙞𝙡𝙤𝙪𝘽𝙤𝙩-𝙈𝘿 🪷'
+global.team = '♋🦁 TEAM MOONLIGHT 🦁'
+global.dev = '🐉 Moonlight By • ✨ Enzito-Ofc'
+global.textbot = '𝙽𝚒𝚕𝚘𝚞𝙱𝚘𝚝 : 𝐄𝐧𝐳𝐢𝐭𝐨𝐎𝐟𝐜 🍀🪷'
 global.vs = '2.0.1'
 
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
@@ -41,15 +40,15 @@ global.imagen2 = fs.readFileSync('./Menu2.jpg')
 global.imagen3 = fs.readFileSync('./Menu3.jpg')
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
-global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Grupo Oficial De Luffy
-global.gp2 = 'https://chat.whatsapp.com/KNhfEDUTcyl5RuwR1Is4Hk'
-global.gp3 = 'https://chat.whatsapp.com/Ksd32KH9zFoDmO1PJt44M7' //GataBot Y Luffy
-global.gp4 = 'https://chat.whatsapp.com/EVc2XJuZwjnKKdWUsRYmms' //ShizukaBot Y Luffy
-global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' //Canal Oficial
-global.yt = 'https://www.youtube.com/@OfcDiego' //Canal De Youtube
+global.gp1 = 'https://chat.whatsapp.com/IICmKudSbuGBFKMPZitp0h' //Grupo Oficial De Luffy
+global.gp2 = 'https://chat.whatsapp.com/IICmKudSbuGBFKMPZitp0h'
+global.gp3 = 'https://chat.whatsapp.com/FstvjiTG22I6d48jtEDVii' //Diabla Y Nilou
+global.gp4 = 'https://chat.whatsapp.com/BQ8eHh74xDQ1ny0nuL95V2' //KiraBot Y NilouBot
+global.channel = 'https://www.whatsapp.com/channel/0029VajIId22phHQLslZah1n' //Canal Oficial
+global.yt = 'https://www.youtube.com/channel/UCbcVZrZQLNaeyNXOq_jB-2g' //Canal De Youtube
 global.md = 'https://github.com/OfcDiego/LuffyBot-MD' //Github Oficial
-global.fb = 'https://www.facebook.com/diegosaroficial?mibextid=ZbWKwL' //Facebook Del Propietario
-global.tiktok = 'https://tiktok.com/@theluffybot' //Cuenta tiktok
+global.fb = 'https://www.facebook.com/EnzoMatiasJesusVaselevich' //Facebook Del Propietario
+global.tiktok = 'https://www.tiktok.com/@enzito_ofcial' //Cuenta tiktok
 
 //• ↳ ◜𝑻𝑰𝑬𝑴𝑷𝑶◞ • 🕒
 global.d = new Date(new Date + 3600000);
@@ -60,8 +59,8 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nLuffy`;
-global.nomorown = '573012482597';
+global.wm2 = `${dia} ${fecha}\nNilouBot`;
+global.nomorown = '5491168758497';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
