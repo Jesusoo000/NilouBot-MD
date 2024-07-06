@@ -22,7 +22,7 @@ let tags = {
   'info': '𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝗰𝗶𝗼𝗻 🐢',
   'nsfw': '𝗡𝘀𝗳𝘄 🔞', 
   'owner': '𝗖𝗿𝗲𝗮𝗱𝗼𝗿 👑', 
-  'mods': '𝗦𝘁𝗮𝗳𝗳 𝗟𝘂𝗳𝗳𝘆 🚩',
+  'mods': 'Staff NilouBot',
   'audio': '𝗔𝘂𝗱𝗶𝗼𝘀 🔉', 
   'ai': '𝗔𝗶 🌹',
   'transformador': '𝗖𝗼𝗻𝘃𝗲𝗿𝘁𝗶𝗱𝗼𝗿𝗲𝘀 💠',
@@ -31,7 +31,7 @@ let tags = {
 const defaultMenu = {
   before: `*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
 
-“ Hola *%name*, mi nombre es *NilouBot*, Cómo se encuentra el día de hoy?  ”
+“Hola *%name*, mi nombre es *NilouBot*, Cómo se encuentra el día de hoy?”
 
 *╭──⬣「 𝐈𝐧𝐟𝐨 𝐔𝐬𝐞𝐫 」⬣*
 *│* ✰ 🌸 *TEAM* https://chat.whatsapp.com/DFpCyH1mOJM9TxbCdYTwvv
@@ -53,7 +53,7 @@ const defaultMenu = {
 %readmore
 *꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
 
-\t*L I S T A  -  D E  -  C O M A N D O S* 
+\t*L I S T  -  C O M M A N D S* 
 `.trimStart(),
   header: '*╭───⬣「 %category 」⬣───╮*',
   body: '*│* %cmd\n',
