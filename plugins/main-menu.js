@@ -156,7 +156,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
+const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1912768c8a7acad915f01.jpg')
 
   let category = "video"
   const db = './media/database/db.json'
@@ -170,7 +170,7 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
 
 await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲𝗹 𝗕𝗼𝘁...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: 'ꪶໍٜ߭۫ިׅ࣪۬߭ׄ🥷ꫂꥈ Hola! ' + name, sourceUrl: redes, thumbnail: icons }}})
 
-m.react('🌸') 
+m.react('🪷') 
 
 /* await conn.sendMessage(m.chat, { video: gif, gifPlayback: true, caption: text.trim(), mentions: [m.sender], contextInfo: {
 mentionedJid: await conn.parseMention(text),
