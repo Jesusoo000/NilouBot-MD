@@ -21,13 +21,13 @@ global.db.data.users[m.sender].estrellas += 10
 global.db.data.users[m.sender].exp += 245
 global.db.data.users[m.sender].joincount += 5
 let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)        
-m.react('📩') 
-let regbot = `👤 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗢 👤
+m.react('💌') 
+let regbot = `📌 𝐑 𝐄 𝐆 𝐈 𝐒 𝐓 𝐑 𝐎 📌
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-「💭」𝗡𝗼𝗺𝗯𝗿𝗲: ${name}
-「✨️」𝗘𝗱𝗮𝗱: ${age} años
+「🌠」𝐍𝐨𝐦𝐛𝐫𝐞: ${name}
+「✨️」𝐄𝐝𝐚𝐝: ${age} años
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-「🎁」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:
+「🎁」𝐑𝐞𝐜𝐨𝐦𝐩𝐞𝐧𝐬𝐚𝐬:
 • 10 Estrellas 🌟
 • 5 NilouCoins 🪙
 • 245 Experiencia 💸
