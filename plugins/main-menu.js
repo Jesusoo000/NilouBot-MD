@@ -3,6 +3,9 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
+
+let welcomeText = "Hola *%name*, mi nombre es *NilouBot*, Cómo se encuentra el día de hoy?"
+
 let tags = {
   'main': '𝗜𝗻𝗳𝗼 📌',
   'buscador': '𝗕𝘂𝘀𝗾𝘂𝗲𝗱𝗮𝘀 💫',
@@ -31,7 +34,7 @@ let tags = {
 const defaultMenu = {
   before: `*✧♬•*¨*•.｡｡.•*¨*•♬✧*
 
-“Hola *%name*, mi nombre es *NilouBot*, Cómo se encuentra el día de hoy?”
+“${welcomeText}”
 
 *╭──⬣「 𝐈𝐧𝐟𝐨 𝐔𝐬𝐞𝐫 」⬣*
 *│* ✰ 🌸 *TEAM* https://chat.whatsapp.com/DFpCyH1mOJM9TxbCdYTwvv
@@ -60,6 +63,7 @@ const defaultMenu = {
   footer: '*╰━━━━━━》❈《 ━━━━━╯*\n',
   after: '',
 }
+
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -113,7 +117,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         for (let tag of plugin.tags)
           if (!(tag in tags) && tag) tags[tag] = tag
     conn.menu = conn.menu ? conn.menu : {}
-    let before = conn.menu.before || defaultMenu.before
+    let before = conn.menu.before || defaultMenu.before.replace("${welcomeText}", welcomeText)
     let header = conn.menu.header || defaultMenu.header
     let body = conn.menu.body || defaultMenu.body
     let footer = conn.menu.footer || defaultMenu.footer
@@ -136,40 +140,40 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       after
     ].join('\n')
     let text = typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
-let replace = {
-'%': '%',
-p: _p, uptime, muptime,
-me: conn.getName(conn.user.jid),
-taguser: '@' + m.sender.split("@s.whatsapp.net")[0],
-npmname: _package.name,
-npmdesc: _package.description,
-version: _package.version,
-exp: exp - min,
-maxexp: xp,
-totalexp: exp,
-xp4levelup: max - exp,
-github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
-greeting, level, estrellas, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
-readmore: readMore
-}
-text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+    let replace = {
+      '%': '%',
+      p: _p, uptime, muptime,
+      me: conn.getName(conn.user.jid),
+      taguser: '@' + m.sender.split("@s.whatsapp.net")[0],
+      npmname: _package.name,
+      npmdesc: _package.description,
+      version: _package.version,
+      exp: exp - min,
+      maxexp: xp,
+      totalexp: exp,
+      xp4levelup: max - exp,
+      github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
+      greeting, level, estrellas, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
+      readmore: readMore
+    }
+    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
 
-const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+    const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1912768c8a7acad915f01.jpg')
+    const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1912768c8a7acad915f01.jpg')
 
-  let category = "video"
-  const db = './media/database/db.json'
-  const db_ = JSON.parse(fs.readFileSync(db))
-  const random = Math.floor(Math.random() * db_.links[category].length)
-  const rlink = db_.links[category][random]
-  global.vid = rlink
-  const response = await fetch(vid)
-  const gif = await response.buffer()
- // const img = imagen1
+    let category = "video"
+    const db = './media/database/db.json'
+    const db_ = JSON.parse(fs.readFileSync(db))
+    const random = Math.floor(Math.random() * db_.links[category].length)
+    const rlink = db_.links[category][random]
+    global.vid = rlink
+    const response = await fetch(vid)
+    const gif = await response.buffer()
+    // const img = imagen1
 
-await conn.reply(m.chat, '*ꪹ͜𓂃͡🌠𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗟𝗶𝘀𝘁 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀🪷...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: 'ꪶໍٜ߭۫ިׅ࣪۬߭ׄ🥷ꫂꥈ Hola! ' + name, sourceUrl: redes, thumbnail: icons }}})
+    await conn.reply(m.chat, '*ꪹ͜𓂃͡🌠𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗟𝗶𝘀𝘁 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀🪷...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: 'ꪶໍٜ߭۫ިׅ࣪۬߭ׄ🥷ꫂꥈ Hola! ' + name, sourceUrl: redes, thumbnail: icons }}})
 
 m.react('🪷') 
 
