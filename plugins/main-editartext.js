@@ -19,7 +19,7 @@ let handler = async (m, { text }) => {
 
 handler.help = ['editartext <nuevo texto>']
 handler.tags = ['main']
-handler.command = ['editartext'] 
+handler.command = ['editartex'] 
 handler.rowner = true
 
 export default handler
