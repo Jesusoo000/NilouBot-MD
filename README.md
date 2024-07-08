@@ -37,7 +37,7 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Jesusoo000%NilouBot-MD) 
 
 
-## <img src="https://telegra.ph/file/20b6b3ff784c4f865ad8d.jpg" alt="Características" width="42" height="42"> Características
+## <img src="https://telegra.ph/file/3a4f6c7aaaefe7af1a878.mp4" alt="Características" width="42" height="42"> Características
 
 > Bot en creación pronto se agregaran más cosas 
 
