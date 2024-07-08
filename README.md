@@ -101,7 +101,6 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 - [x] Chatbot (simsimi)
 - [x] Crear sticker de image/video/gif/url
 - [x] SubBot (Jadibot)
-- [ ] Juego RPG
 - [x] Descarga de música y video De YT
 - [x] Otros
 
