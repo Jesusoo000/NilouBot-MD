@@ -20,7 +20,7 @@ let txt = `*💫  𝐘 𝐎 𝐔 𝐓 𝐔 𝐁 𝐄  -  𝐏 𝐋 𝐀 𝐘  �
        txt += `📌 *𝙿𝚞𝚋𝚕𝚒𝚌𝚊𝚍𝚘 𝙴𝚗:*\n${yt_play[0].ago}\n\n`
        txt += `🌠 *𝙴𝚗𝚕𝚊𝚌𝚎:*\n${'https://youtu.be/' + yt_play[0].videoId}\n\n`
        txt += `✨️ *𝙽𝚘𝚝𝚊:* Para descargar responde a este mensaje con *1* o *2*.\n\n`
-       txt += `*1:* 𝐕𝐢𝐝𝐞𝐨\n*2:* 𝐀𝐮𝐝𝐢𝐨`
+       txt += `*1:* Video\n*2:* Audio`
 
 /* let txt = `・₊✧★。..・✫・🎸🎧°⋆♡₊˚ 🔮
 > 🌩 τιτυℓο:
