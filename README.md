@@ -13,7 +13,7 @@
 ⁖🩵꙰  **`ACTUALIZAR NILOU BOT`** ⁖🩵꙰
 > NOTA: Comandos para actualizar Nilou - MD de forma automática
 ```bash
-grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/LuffyBot-MD/master/update.sh | bash
+grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/Jesusoo000/NilouBot-MD/master/update.sh | bash
 ```
 Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
 
