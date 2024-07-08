@@ -32,7 +32,7 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `*✧♬•*¨*•.｡｡.•*¨*•♬✧*
+  before: `*♡･ﾟ:*｡.:*･ﾟﾟ･*:.｡*:ﾟ･♡
 
 “${welcomeText}”
 
@@ -54,7 +54,7 @@ const defaultMenu = {
 *╰──⬣*
 
 %readmore
-*✧♬•*¨*•.｡｡.•*¨*•♬✧*
+*♡･ﾟ:*｡.:*･ﾟﾟ･*:.｡*:ﾟ･♡*
 
 \t*L I S T  -  C O M M A N D S* 
 `.trimStart(),
