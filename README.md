@@ -7,17 +7,15 @@
 
 
 > [!AVISO]
-> Este bot no instala en termux por problemas de `$~ yarn`, estaremos arreglando el problema.
+> Este bot no instala en termux por problemas de `$~ yarn`, estaremos arreglando el problema en futuras actualizaciones, se paciente.
 
 
 ⁖🩵꙰  **`ACTUALIZAR NILOU BOT`** ⁖🩵꙰
-> Note Comandos para actualizar Nilou - MD de forma automática
+> NOTA: Comandos para actualizar Nilou - MD de forma automática
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/LuffyBot-MD/master/update.sh | bash
 ```
 Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
-
-> Warning Estos comandos solo funcionan para TERMUX, REPLIT, LINUX
 
 ***
 
