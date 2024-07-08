@@ -9,50 +9,8 @@
 > [!AVISO]
 > Este bot no instala en termux por problemas de `$~ yarn`, estaremos arreglando el problema.
 
-⁖🩵꙰  **`INSTALACION MANUAL POR TERMUX`** ⁖🩵꙰
 
-[`🏷 Instalar Termux Clic Aqui`](https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file)
-
-> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-
-```bash
-termux-setup-storage
-```
-```bash
-apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
-```
-```bash
-git clone https://github.com/OfcDiego/LuffyBot-MD && cd LuffyBot-MD
-```
-```bash
-yarn install && npm install
-```
-```bash
-npm start
-```
-
-⁖❤️꙰ **`ACTIVAR EN TERMUX EN CASO DE DETENERSE`** ⁖❤️꙰
-```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd 
-> cd LuffyBot-MD
-> npm start
-```
-
-⁖💚꙰  **`OBTENER OTRO CODIGO QR`** ⁖💚꙰
-```bash
-> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd LuffyBot-MD
-> rm -rf LuffySession
-> npm start
-```
-
-⁖💜꙰  **`LUFFY 24/7 (TERMUX)`** ⁖💜꙰
-```bash
-> termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
-```
-
-⁖🩵꙰  **`ACTUALIZAR LUFFY`** ⁖🩵꙰
+⁖🩵꙰  **`ACTUALIZAR NILOU BOT`** ⁖🩵꙰
 > Note Comandos para actualizar Luffy - MD de forma automática
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/LuffyBot-MD/master/update.sh | bash
