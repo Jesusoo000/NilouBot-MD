@@ -70,6 +70,6 @@ href="https://github.com/matias-crypto"><img src="https://github.com/matias-cryp
 <a
 href="https://github.com/Jesusoo000"><img src="https://github.com/Jesusoo000.png" width="130" height="130" alt="Enzo"/></a>
 
-> Copyright (c) 2024 **[OfcDiego](https://github.com/Jesusoo000/NilouBot-MD)**.
+> Copyright (c) 2024 **[Enzo](https://github.com/Jesusoo000/NilouBot-MD)**.
 
 **`¡GRACIAS POR PREFERIRNOS!`  ⁖💜꙰༻**
