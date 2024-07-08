@@ -39,8 +39,6 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Jesusoo000%NilouBot-MD) 
 
 
-
-
 ## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="Características" width="42" height="42"> Características
 
 > Bot en creación pronto se agregaran más cosas 
@@ -59,18 +57,19 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 *** 
 
 ### `🌟 DESARROLLADORES`
-<a href="https://github.com/OfcDiego/LuffyBot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=OfcDiego/LuffyBot-MD" /> 
+<a href="https://github.com/Jesusoo000/NilouBot-MD/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Jesusoo000/NilouBot-MD" /> 
 </a>
 
 ### `☄️ AGRADECIMIENTOS`
 <a
-href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="120" height="120" alt="Agradecimientos"/></a>
+href="https://github.com/matias-crypto"><img src="https://github.com/matias-crypto.png" width="120" height="120" alt="Agradecimientos"/></a>
+
 
 ### `👑 CREADOR`
 <a
-href="https://github.com/OfcDiego"><img src="https://github.com/OfcDiego.png" width="130" height="130" alt="Diego"/></a>
+href="https://github.com/Jesusoo000"><img src="https://github.com/Jesusoo000.png" width="130" height="130" alt="Enzo"/></a>
 
-> Copyright (c) 2024 **[OfcDiego](https://github.com/OfcDiego/LuffyBot-MD)**.
+> Copyright (c) 2024 **[OfcDiego](https://github.com/Jesusoo000/NilouBot-MD)**.
 
 **`¡GRACIAS POR PREFERIRNOS!`  ⁖💜꙰༻**
