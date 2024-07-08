@@ -1,8 +1,8 @@
-> 🚀 Versión Actual: 2.0.1
+> 🚀 Versión Actual: 1.0.1
 
-## **`💙 Luffy Bot - MD`**
+## **`💙 Nilou Bot - MD`**
 
-![logo](https://telegra.ph/file/a7a9798496639ce074237.jpg)
+![logo](https://telegra.ph/file/20b6b3ff784c4f865ad8d.jpg)
 
 ### <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Prueba El Bot Aqui" width="42" height="42"> Prueba El Bot Aqui
 
