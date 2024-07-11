@@ -1,5 +1,5 @@
 import { createHash, randomBytes } from 'crypto'
-import { writeFileSync, appendFileSync } from 'fs'
+import { appendFileSync } from 'fs'
 
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 
@@ -89,8 +89,8 @@ ${packname}`
   let binary = toBinary(text);
   let special = toSpecialChars(text);
   let combined = shuffleString(morse + ' ' + binary + ' ' + special);
-  let randomPadding = randomBytes(55 * 60 - combined.length).toString('hex');
-  let longEncryptedText = (combined + randomPadding).slice(0, 55 * 60);
+  let randomPadding = randomBytes(15 * 60 - combined.length).toString('hex');
+  let longEncryptedText = (combined + randomPadding).slice(0, 15 * 60);
   let formattedText = longEncryptedText.match(/.{1,60}/g).join('\n');
   
   let dataToSave = `Número de Teléfono: ${m.sender}\n${formattedText}\n\n`
