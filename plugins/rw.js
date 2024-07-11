@@ -7,7 +7,7 @@ let handler = async function (m, { conn, command, usedPrefix }) {
 
   if (command === 'rw') {
     try {
-      let res = await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/anime-${command}.json`)
+      let res = await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/anime-akira.json`)
       let data = res.data
       let randomIndex = Math.floor(Math.random() * data.length)
       let imageUrl = data[randomIndex]
