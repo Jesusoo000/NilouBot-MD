@@ -40,11 +40,11 @@ let handler = async function (m, { conn, command }) {
   if (command === 'listrw') {
     let user = global.db.data.users[m.sender]
     // Implementar listado de imágenes reclamadas si es necesario
-    // if (!user.rw.length) throw 'No has reclamado ninguna imagen de anime.'
+    if (!user.rw.length) throw 'No has reclamado ninguna imagen de anime.'
 
-    // let message = 'Imágenes de anime reclamadas:\n\n'
-    // user.rw.forEach((anime, index) => {
-    //   message += `${index + 1}. URL: ${anime.imageUrl}\n\n`
+    let message = 'Imágenes de anime reclamadas:\n\n'
+    user.rw.forEach((anime, index) => {
+     message += `${index + 1}. URL: ${anime.imageUrl}\n\n`
     // })
 
     await m.reply('Función no implementada aún para listar imágenes de anime reclamadas.')
