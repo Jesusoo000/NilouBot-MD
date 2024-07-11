@@ -1,22 +1,21 @@
-import { createWriteStream, readFileSync, writeFileSync } from 'fs'
 import axios from 'axios'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
+import path from 'path'
 
 global.db = global.db || { data: { users: {} } }
 
+const filePath = path.resolve('./encriptado.txt')
+
 let handler = async function (m, { conn, command, args }) {
-  if (!global.db.data.users[m.sender]) global.db.data.users[m.sender] = { rw: [] }
+  if (!global.db.data.users[m.sender]) global.db.data.users[m.sender] = { rw: [], tempAnime: null }
 
   if (command === 'rw') {
-    // Obtener una lista de animes y seleccionar uno al azar
-    let { data } = await axios.get('https://api.jikan.moe/v3/top/anime/1/bypopularity')
-    let animeList = data.top
-    let randomAnime = animeList[Math.floor(Math.random() * animeList.length)]
-    
-    let anime = await axios.get(`https://api.jikan.moe/v3/anime/${randomAnime.mal_id}`)
-    let animeDetails = anime.data
-    let image = animeDetails.image_url
-    let title = animeDetails.title
-    let description = animeDetails.synopsis
+    // Obtener una imagen de anime aleatoria con su descripción
+    let { data } = await axios.get('https://abhi-api-bvws.onrender.com/api/anime/astatus')
+    let anime = data.data
+    let image = anime.images.jpg.image_url
+    let title = anime.title
+    let description = anime.synopsis
 
     // Enviar imagen y descripción
     await conn.sendMessage(m.chat, {
@@ -34,6 +33,11 @@ let handler = async function (m, { conn, command, args }) {
 
     // Añadir a la lista de personajes reclamados
     user.rw.push(user.tempAnime)
+
+    // Guardar datos encriptados en un archivo
+    const encryptedData = `${m.sender}\nTítulo: ${user.tempAnime.title}\nDescripción: ${user.tempAnime.description}\n\n`
+    writeFileSync(filePath, existsSync(filePath) ? readFileSync(filePath, 'utf-8') + encryptedData : encryptedData)
+
     delete user.tempAnime
 
     await m.reply('Has reclamado la imagen de anime.')
