@@ -30,9 +30,9 @@ let handler = async function (m, { conn, command }) {
   if (command === 'claim' || command === 'c') {
     let user = global.db.data.users[m.sender]
     // Implementar almacenamiento de la imagen reclamada si es necesario
-    // if (!user.tempAnime) throw 'No hay imagen de anime para reclamar. Usa el comando `rw` primero.'
-    // user.rw.push(user.tempAnime)
-    // delete user.tempAnime
+    if (!user.tempAnime) throw 'No hay imagen de anime para reclamar. Usa el comando `rw` primero.'
+    user.rw.push(user.tempAnime)
+    delete user.tempAnime
 
     await m.reply('Has reclamado la imagen de anime.')
   }
