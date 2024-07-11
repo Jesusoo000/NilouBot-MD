@@ -3,7 +3,7 @@ import path from 'path'
 
 global.db = global.db || { data: { users: {} } }
 
-const animeImagesFile = path.join(__dirname, 'anime_images.json')
+const animeImagesFile = path.join(__dirname, './anime_images.json')
 
 let handler = async function (m, { conn, command }) {
   if (!global.db.data.users[m.sender]) global.db.data.users[m.sender] = { rw: [], tempAnime: null }
