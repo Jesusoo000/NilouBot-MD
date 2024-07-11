@@ -47,7 +47,7 @@ ${formattedText}
 }
 
 handler.help = ['encript'].map(v => v + ' <texto>')
-handler.tags = ['herramientas']
+handler.tags = ['tools']
 handler.command = ['encript']
 
 export default handler
