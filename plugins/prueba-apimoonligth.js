@@ -24,7 +24,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
     message += `❥︎ *Vistas*: ${video.views}\n`;
     message += `❥︎ *Publicado*: ${video.uploaded}\n`;
     message += `❥︎ *Enlace*: ${video.link}\n\n`;
-    message += `> 🚩 API creada por https://www.github.com/matias-crypto`;
+    message += `> 🚩 Comando y API creados por: https://www.github.com/matias-crypto`;
 
     await conn.reply(m.chat, message, m);
   } catch (error) {
