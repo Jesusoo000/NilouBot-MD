@@ -38,7 +38,7 @@ const handler = async (m, { conn, text }) => {
   }
 };
 
-handler.command = ['yt', 'youtube'];
+handler.command = ['yttt', 'ytyt'];
 handler.register = true;
 
 export default handler;```
