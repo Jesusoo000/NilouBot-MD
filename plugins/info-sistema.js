@@ -13,6 +13,10 @@ const formatBytes = (bytes, decimals = 2) => {
 const getDiskSpace = () => {
     try {
         const stdout = execSync('df -h | grep -E "^/dev/root|^/dev/sda1"').toString();
+
+    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const rtotal = Object.entries(global.db.data.users).length || '0'
+
         const [ , size, used, available, usePercent ] = stdout.split(/\s+/);
         return { size, used, available, usePercent };
     } catch (error) {
@@ -42,6 +46,7 @@ const handler = async (m, { conn }) => {
 🚀 *RAM Libre ⪼* ${formatBytes(freeMem)}
 ⌛️ *RAM Usada ⪼* ${formatBytes(usedMem)}
 🕒 *Tiempo Activo ⪼* ${muptime}
+🗣️ *Usuarios ⪼* ${rtotal}/ ${rtotalreg}
 
 🪴 *Uso de Memoria Nodejs:* 
 → RSS: ${formatBytes(nodeUsage.rss)}
