@@ -10,10 +10,6 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     const date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
-    const user = global.db.data.users[m.sender];
-    const { money, joincount } = global.db.data.users[m.sender];
-    const { exp, limit, level, role } = global.db.data.users[m.sender];
-    const rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
     const more = String.fromCharCode(8206);
     const readMore = more.repeat(850);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
