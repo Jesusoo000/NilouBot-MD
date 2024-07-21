@@ -45,7 +45,7 @@ const handler = async (m, { conn }) => {
 🚀 *RAM Libre ⪼* ${formatBytes(freeMem)}
 ⌛️ *RAM Usada ⪼* ${formatBytes(usedMem)}
 🕒 *Tiempo Activo ⪼* ${muptime}
-🗣️ *Usuarios ⪼* ${rtotal}/ ${rtotalreg}
+🗣️ *Usuarios ⪼* ${rtotal}/${rtotalreg}
 
 🪴 *Uso de Memoria Nodejs:* 
 → RSS: ${formatBytes(nodeUsage.rss)}
