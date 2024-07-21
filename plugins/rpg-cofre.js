@@ -5,7 +5,7 @@ const handler = async (m, {isPrems, conn}) => {
   const img = 'https://telegra.ph/file/62ba6688963b0ad407edd.png';
   const dia = Math.floor(Math.random() * 30);
   const tok = Math.floor(Math.random() * 10);
-  const luffy = Math.floor(Math.random() * 4000);
+  const nilou = Math.floor(Math.random() * 4000);
   const expp = Math.floor(Math.random() * 5000);
 
   global.db.data.users[m.sender].estrellas += dia;
@@ -22,7 +22,7 @@ const handler = async (m, {isPrems, conn}) => {
 ╭━〔 ${global.botname} 〕⬣
 ┃ *${dia} Estrellas* 🌟
 ┃ *${tok} Tokens* 💰
-┃ *${luffy} NilouCoins* 💫
+┃ *${nilou} NilouCoins* 💫
 ┃ *${expp} Exp* ⚡
 ╰━━━━━━━━━━━━⬣`;
 
