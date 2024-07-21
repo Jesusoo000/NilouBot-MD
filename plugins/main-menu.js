@@ -162,6 +162,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
     const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1912768c8a7acad915f01.jpg')
+    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const rtotal = Object.entries(global.db.data.users).length || '0';
 
     let category = "video"
     const db = './media/database/db.json'
