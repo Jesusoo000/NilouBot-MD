@@ -9,6 +9,9 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     const week = d.toLocaleDateString(locale, { weekday: 'long' });
     const date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
     const _uptime = process.uptime() * 1000;
+    let { exp, estrellas, level, role } = global.db.data.users[m.sender]
+    let { min, xp, max } = xpRange(level, global.multiplier)
+
     const uptime = clockString(_uptime);
     const more = String.fromCharCode(8206);
     const readMore = more.repeat(850);
@@ -21,10 +24,10 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
 *╭──⬣「 𝐈𝐧𝐟𝐨 𝐔𝐬𝐞𝐫 」⬣*
 *│* ✰ 🌸 *TEAM* https://chat.whatsapp.com/DFpCyH1mOJM9TxbCdYTwvv
 *│* ✰ 💌 *𝐂𝐥𝐢𝐞𝐧𝐭𝐞:* ${taguser}
-*│* ✰ ⚡️ *𝐄𝐱𝐩:* 4334
-*│* ✰ 🌟 *𝐄𝐬𝐭𝐫𝐞𝐥𝐥𝐚𝐬:* 30
-*│* ✰ 📌 *𝐍𝐢𝐯𝐞𝐥:* 0
-*│* ✰ 🪷 *𝑹𝒂𝒏𝒈𝒐:* *𝗡𝗼𝘃𝗮𝘁𝗼 V* 🍷
+*│* ✰ ⚡️ *𝐄𝐱𝐩:* ${exp}
+*│* ✰ 🌟 *𝐄𝐬𝐭𝐫𝐞𝐥𝐥𝐚𝐬:* ${estrellas}
+*│* ✰ 📌 *𝐍𝐢𝐯𝐞𝐥:* ${level}
+*│* ✰ 🪷 *𝑹𝒂𝒏𝒈𝒐:* *${rol}* 🍷
 *╰──⬣*
 
 *╭──⬣「 𝑰𝒏𝒇𝒐 𝑩𝒐𝒕 」⬣*
