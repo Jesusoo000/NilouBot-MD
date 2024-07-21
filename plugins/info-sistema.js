@@ -13,10 +13,6 @@ const formatBytes = (bytes, decimals = 2) => {
 const getDiskSpace = () => {
     try {
         const stdout = execSync('df -h | grep -E "^/dev/root|^/dev/sda1"').toString();
-
-    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
-    const rtotal = Object.entries(global.db.data.users).length || '0'
-
         const [ , size, used, available, usePercent ] = stdout.split(/\s+/);
         return { size, used, available, usePercent };
     } catch (error) {
@@ -36,6 +32,9 @@ const handler = async (m, { conn }) => {
     const arch = os.arch();
     const nodeUsage = process.memoryUsage();
     const diskSpace = getDiskSpace();
+
+    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const rtotal = Object.entries(global.db.data.users).length || '0';
 
     const message = `✅️ *ESTADO DEL SISTEMA*
 
@@ -63,7 +62,7 @@ ${diskSpace ? `
 → Porcentaje de Uso: ${diskSpace.usePercent}` : 'Error.'}
 `;
 
-    await conn.reply(m.chat, message.trim(), m, rcanal, );
+    await conn.reply(m.chat, message.trim(), m);
 };
 
 handler.help = ['sistema'];
@@ -74,7 +73,8 @@ handler.register = true;
 export default handler;
 
 function clockString(ms) {
-let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+    let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000);
+    let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
+    let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
+    return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':');
+}
