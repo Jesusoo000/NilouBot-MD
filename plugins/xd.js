@@ -82,7 +82,7 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
   }
 };
 
-handler.command = /^(animes|menuanimes)$/i;
+handler.command = /^(anim|menuan)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
