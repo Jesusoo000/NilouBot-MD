@@ -1,25 +1,19 @@
 import fetch from 'node-fetch';
+import fs from 'fs';
 
-
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-  const datas = global
-  const idioma = datas.db.data.users[m.sender].language
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
-  const tradutor = _translate.plugins.menu_anime
-
+const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
   try {
     const pp = 'https://telegra.ph/file/1912768c8a7acad915f01.jpg';
-    // let vn = './media/menu.mp3'
-    const d = new Date(new Date + 3600000);
+    const d = new Date(new Date() + 3600000);
     const locale = 'es';
-    const week = d.toLocaleDateString(locale, {weekday: 'long'});
-    const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'});
+    const week = d.toLocaleDateString(locale, { weekday: 'long' });
+    const date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
     const user = global.db.data.users[m.sender];
-    const {money, joincount} = global.db.data.users[m.sender];
-    const {exp, limit, level, role} = global.db.data.users[m.sender];
-    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const { money, joincount } = global.db.data.users[m.sender];
+    const { exp, limit, level, role } = global.db.data.users[m.sender];
+    const rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
     const more = String.fromCharCode(8206);
     const readMore = more.repeat(850);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
@@ -28,11 +22,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ║    ◉— *𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ ${tradutor.texto1[1]}, ${taguser}*
+║➤ Hola, ${taguser}*
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *< ${tradutor.texto1[0]} />*
+┃ *< Menú de Anime />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🧿 _${usedPrefix}lolivid_
 ┣ ඬ⃟ 🧿 _${usedPrefix}loli_
@@ -75,19 +69,19 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┣ ඬ⃟ 🧿 _${usedPrefix}sakura_
 ┣ ඬ⃟ 🧿 _${usedPrefix}cosplay_
 ┗━━━━━━━━━━━━━━━━┛`.trim();
-    if (m.isGroup) {
-      // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
-      const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
-    } else {
-      // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
-      const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
-    }
+
+    const fkontak2 = {
+      'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'},
+      'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}},
+      'participant': '0@s.whatsapp.net'
+    };
+
+    conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net') }, { quoted: fkontak2 });
   } catch {
-    conn.reply(m.chat, tradutor.texto1[3], m);
+    conn.reply(m.chat, 'Hubo un error al generar el menú de anime.', m);
   }
 };
+
 handler.command = /^(animes|menuanimes)$/i;
 handler.exp = 50;
 handler.fail = null;
