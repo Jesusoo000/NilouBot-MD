@@ -8,7 +8,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const tradutor = _translate.plugins.menu_anime
 
   try {
-    const pp = '';
+    const pp = 'https://telegra.ph/file/1912768c8a7acad915f01.jpg';
     // let vn = './media/menu.mp3'
     const d = new Date(new Date + 3600000);
     const locale = 'es';
