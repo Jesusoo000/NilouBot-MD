@@ -365,7 +365,7 @@ const document = doc[Math.floor(Math.random() * doc.length)];
   }
 };
 handler.tags = ['main']
-handler.help = ['menu2']
+handler.help = ['meni']
 handler.command = /^(menu2|menuaudios)$/i;
 handler.register = true
 handler.exp = 50;
