@@ -17,8 +17,7 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     const more = String.fromCharCode(8206);
     const readMore = more.repeat(850);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
-    const document = doc[Math.floor(Math.random() * doc.length)];
+    
     const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ║    ◉— *𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
