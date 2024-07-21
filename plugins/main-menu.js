@@ -163,7 +163,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 
     const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1912768c8a7acad915f01.jpg')
     
-    const rtotal = Object.entries(global.db.data.users).length || '0';
 
     let category = "video"
     const db = './media/database/db.json'
