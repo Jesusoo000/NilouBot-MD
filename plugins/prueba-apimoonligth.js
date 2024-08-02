@@ -6,7 +6,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
   }
 
   let query = args.join(' ');
-  let url = `http://192.101.68.21:2070/youtube/videos?q=${encodeURIComponent(query)}`;
+  let url = `http://1.app.de.flarex.cloud:5333/youtube/videos?q=${encodeURIComponent(query)}`;
 
   try {
     let response = await fetch(url);
