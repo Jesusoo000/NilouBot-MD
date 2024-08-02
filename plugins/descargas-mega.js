@@ -44,7 +44,7 @@ await conn.reply(m.chat, "*_❏ 🍃 Ocurrio un error inesperado_*", m,msg);
 
 handler.help = ["ᴍᴇɢᴀ"]
 handler.tags = ["downloader"]
-handler.command = /^(megas)$/i
+handler.command = ["megas"]
 export default handler
 
 function formatBytes(bytes) {
