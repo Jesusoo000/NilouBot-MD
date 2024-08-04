@@ -59,7 +59,7 @@ const defaultMenu = {
 \t*L I S T  -  C O M M A N D S* 
 `.trimStart(),
   header: '*╭━━━━━━ • ✿「 %category 」✿ • ━━━━━━╮*',
-  body: '*│* ਊ➻ %cmd\n',
+  body: '*│* ᪒❥ %cmd\n',
   footer: '*╰━━━━━━》❈《 ━━━━━╯*\n',
   after: '',
 }
