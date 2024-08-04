@@ -161,7 +161,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 
     const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-    const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1912768c8a7acad915f01.jpg')
+    const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/454cfce50a455188ce920.jpg')
     
 
     let category = "video"
