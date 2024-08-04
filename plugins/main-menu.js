@@ -60,7 +60,7 @@ const defaultMenu = {
 `.trimStart(),
   header: '*╭•°• ✾ •°•「 %category 」•°• ✾ •°•╮*',
   body: '*│* ᪒❥ %cmd\n',
-  footer: '*╰━━━━━━》❈《 ━━━━━╯*\n',
+  footer: '*╰★｡+ﾟ☆ﾟ+｡★ ❈ ★｡+ﾟ☆ﾟ+｡★╯*\n',
   after: '',
 }
 
