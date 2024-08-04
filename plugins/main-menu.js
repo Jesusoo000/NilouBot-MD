@@ -174,7 +174,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     const gif = await response.buffer()
     // const img = imagen1
 
-    await conn.reply(m.chat, '*ꪹ͜𓂃͡🌠𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐 𝑳𝒊𝒔𝒕 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔🪷...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: 'ꪶໍٜ߭۫ިׅ࣪۬߭ׄ🥷ꫂꥈ Hola! ' + name, sourceUrl: redes, thumbnail: icons }}})
+    await conn.reply(m.chat, '*ꪹ͜𓂃͡🧬𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐 𝑳𝒊𝒔𝒕 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔💖...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: 'ꪶໍٜ߭۫ިׅ࣪۬߭ׄ🥷ꫂꥈ Hola! ' + name, sourceUrl: redes, thumbnail: icons }}})
 
 m.react('🪷') 
 
