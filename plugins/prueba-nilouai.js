@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import fs from 'fs';
 import path from 'path';
 
@@ -6,7 +5,7 @@ const conversations = {};
 
 const handler = async (m, {conn, text, usedPrefix, command}) => {
     if (usedPrefix.toLowerCase() === 'a') return;
-    if (!text) return conn.reply(m.chat, `*🤍 Ingrese su petición*\n*Ejemplo de uso:* ${usedPrefix + command} Hola`, m);
+    if (!text) return conn.reply(m.chat, `*🤍 Ingrese su petición*\n*🪼 Ejemplo de uso:* ${usedPrefix + command} Hola`, m);
 
     const chatId = m.chat;
     const normalizedText = text.toLowerCase();
