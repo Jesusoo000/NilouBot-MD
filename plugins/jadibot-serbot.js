@@ -83,7 +83,7 @@ loadDatabase()
 if (connection == "open") {
 conn.isInit = true
 global.conns.push(conn)
-await parentw.reply(m.chat, args[0] ? '🐢 Conectado con éxito al WhatsApp.' : '🚩 Vinculaste un Sub-Bot con éxito.', m, rcanal)
+await parentw.reply(m.chat, args[0] ? '🐢 Conectado con éxito al WhatsApp.' : '🤖 𝚅𝚒𝚗𝚌𝚞𝚕𝚊𝚜𝚝𝚎 𝚞𝚗 𝚂𝚞𝚋-𝙱𝚘𝚝 𝚌𝚘𝚗 𝚎𝚡𝚒𝚝𝚘.', m, rcanal)
 await sleep(5000)
 if (args[0]) {
 return
