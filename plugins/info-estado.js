@@ -1,67 +1,44 @@
-//Credit for https://github.com/GataNina-Li/GataBot-MD & https://github.com/AzamiJs/CuriosityBot-MD
+let handler = async (m, { conn, command, usedPrefix }) => {
+let pp = imagen1
+let name = await conn.getName(m.sender)
+let _uptime = process.uptime() * 1000
+let _muptime
+if (process.send) { process.send('uptime')
+_muptime = await new Promise(resolve => { process.once('message', resolve) 
+setTimeout(resolve, 1000) }) * 1000}
+let uptime = clockString(_uptime)
+let estado = `
+❮🗿❯ » 𝘊𝘙𝘌𝘈𝘋𝘖𝘙:
+• ${creador}
 
-import { performance } from 'perf_hooks'
-import osu from 'node-os-utils'
+❮📝❯ » 𝘈𝘚𝘐𝘚𝘛𝘌𝘕𝘊𝘐𝘈:
+• ${asistencia}
 
-var handler = async(m, { conn, command, usedPrefix}) => {
+❮🌎❯ » 𝘔𝘖𝘋𝘖:
+• publico.
 
-try {
+❮🤖❯ » 𝘛𝘐𝘗𝘖 𝘋𝘌 𝘉𝘖𝘛:
+• ${(conn.user.jid == global.conn.user.jid ? 'Bot Oficial' : `*Sub Bot de: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
-let NotDetect = 'No Detectado'
-let old = performance.now()
-let cpu = osu.cpu
-let cpuCore = cpu.count()
-let drive = osu.drive
-let mem = osu.mem
-let netstat = osu.netstat
-let OS = osu.os.platform()
-let cpuModel = cpu.model()
-let cpuPer
-let p1 = cpu.usage().then(cpuPercentage => { cpuPer = cpuPercentage }).catch(() => { cpuPer = NotDetect })
-let driveTotal, driveUsed, drivePer
-let p2 = drive.info().then(info => { driveTotal = (info.totalGb + ' GB'), driveUsed = info.usedGb, drivePer = (info.usedPercentage + '%') }).catch(() => { driveTotal = NotDetect, driveUsed = NotDetect, drivePer = NotDetect })
-let ramTotal, ramUsed
-let p3 = mem.info().then(info => { ramTotal = info.totalMemMb, ramUsed = info.usedMemMb }).catch(() => { ramTotal = NotDetect, ramUsed = NotDetect })
-let netsIn, netsOut
-let p4 = netstat.inOut().then(info => { netsIn = (info.total.inputMb + ' MB'), netsOut = (info.total.outputMb + ' MB') }).catch(() => { netsIn = NotDetect, netsOut = NotDetect })
-await Promise.all([p1, p2, p3, p4])
-await conn.reply(m.chat, `_Probando ${command }..._`, m)
-let _ramTotal = (ramTotal + ' MB')
-let neww = performance.now()
+❮🔑❯ » 𝘌𝘚𝘛𝘈𝘋𝘖:
+• Activo.
 
+❮📅❯ » 𝘈𝘊𝘛𝘐𝘝𝘐𝘋𝘈𝘋:
+• ${uptime}
 
-var txt = `🚩 *Estado*
-
-*OS* : ${OS}
-*CPU Model* : ${cpuModel}
-*CPU Core* : ${cpuCore} Centro
-*CPU* : ${cpuPer}%
-*Ram* : ${ramUsed} / ${_ramTotal}(${/[0-9.+/]/g.test(ramUsed) &&  /[0-9.+/]/g.test(ramTotal) ? Math.round(100 * (ramUsed / ramTotal)) + '%' : NotDetect})
-*Drive* : ${driveUsed} / ${driveTotal} (${drivePer})
-*Ping* : ${Math.round(neww - old)} ms
-*Internet IN* : ${netsIn}
-*Internet OUT* : ${netsOut}`
-
-conn.relayMessage(m.chat, { extendedTextMessage:{ text: txt, contextInfo: { externalAdReply: { title: '', mediaType: 1, previewType: 0, renderLargerThumbnail: true, thumbnailUrl: 'https://telegra.ph/file/56d6e15d7ebf5fc5d0d26.jpg', sourceUrl: '' }}, mentions: [m.sender] }}, {})
-
-console.log(OS)
-} catch (e) {
-console.log(e)
-conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, fake, )}
-
+❮🤖❯ » 𝘉𝘖𝘛:
+• ${wm}
+`
+await conn.sendButton(m.chat, estado, 'Estado del bot.', pp, [
+['𝗠𝗲𝗻𝘂 🔜', '.menu']], null, [['𝗖𝗮𝗻𝗮𝗹 🔜', `${canal}`]], m)
 }
-handler.help = ['estado', 'status']
-handler.tags = ['bot']
-handler.command = /^status|statusbot|botstatus|estado$/i
-
-handler.register = true
-
+handler.help = ['estado']
+handler.tags = ['main']
+handler.command = /^(estado|status|estate|state|heygata|stado|stats|botstat(us)?)$/i
 export default handler
 
 function clockString(ms) {
-let h = Math.floor(ms / 3600000)
-let m = Math.floor(ms / 60000) % 60
-let s = Math.floor(ms / 1000) % 60
-console.log({ ms, h, m, s })
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
