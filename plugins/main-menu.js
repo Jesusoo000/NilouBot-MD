@@ -37,7 +37,7 @@ const defaultMenu = {
 “${welcomeText}”
 
 *╭──⬣「 𝐈𝐧𝐟𝐨 𝐔𝐬𝐞𝐫 」⬣*
-*│* ✰ 🌸 *TEAM* https://chat.whatsapp.com/DFpCyH1mOJM9TxbCdYTwvv
+*│* ✰ 🌸 *TEAM* https://chat.whatsapp.com/GpbF3JCTEr2CSj3zLJ1IQj
 *│* ✰ 💌 *𝐂𝐥𝐢𝐞𝐧𝐭𝐞:* %name
 *│* ✰ ⚡️ *𝐄𝐱𝐩:* %exp
 *│* ✰ 🌟 *𝐄𝐬𝐭𝐫𝐞𝐥𝐥𝐚𝐬:* %estrellas
