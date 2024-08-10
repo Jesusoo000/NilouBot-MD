@@ -23,12 +23,12 @@ global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
 global.packname = '⪛✰ 𝐍𝐢𝐥𝐨𝐮𝐁𝐨𝐭-𝐌𝐃 🌸 ✰⪜'
-global.author = 'Enzito 🌼'
-global.wm = '🌹 𝒩𝒾𝓁𝑜𝓊𝐵𝑜𝓉-𝑀𝒟 🪷'
-global.titulowm = '🌸 𝓝𝓲𝓵𝓸𝓾𝓑𝓸𝓽-𝓜𝓓 💖'
+global.author = '💀EnzitoOfc💫'
+global.wm = '🌹 ᪒❥𝒩𝒾𝓁𝑜𝓊𝐵𝑜𝓉-𝑀𝒟 🪷'
+global.titulowm = '🌸 ᰩ❧𝓝𝓲𝓵𝓸𝓾𝓑𝓸𝓽-𝓜𝓓 💖'
 global.titulowm2 = 'Enzito-Ofc'
 global.igfg = 'ENZITO-OfC'
-global.botname = '𝙉𝙞𝙡𝙤𝙪𝘽𝙤𝙩-𝙈𝘿 🪷'
+global.botname = '𝙉𝙞𝙡𝙤𝙪𝘽𝙤𝙩-𝙈𝘿༃ 🪷'
 global.team = '♋🦁 TEAM MOONLIGHT 🦁'
 global.dev = '🐉 By MoonLight Team • ✨ Enzito-Ofc'
 global.textbot = '𝙽𝚒𝚕𝚘𝚞𝙱𝚘𝚝 : 𝐄𝐧𝐳𝐢𝐭𝐨𝐎𝐟𝐜 🍀🪷'
