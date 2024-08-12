@@ -95,7 +95,7 @@ global.rcanal = {
 contextInfo: {
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-false_120363317991468969@g.us_3E902D1E91BB72AC25600A_50766358189@c.us",
+newsletterJid: "120363314585338428@newsletter",
 serverMessageId: 100,
 newsletterName: 'Nilou Bot - Channel 🌸',
 },
