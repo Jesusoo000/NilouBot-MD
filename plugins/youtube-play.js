@@ -27,9 +27,9 @@ let handler = async (m, { conn, command, args, text, usedPrefix }) => {
     txt += '*💖 NilouBot-MD ✨️*';
 
     await conn.sendButton(m.chat, txt, '. ', thumbnail, [
-        ['audioMP3', `${usedPrefix}audio ${url}`],
+        ['audioMP3', `${usedPrefix}audioMP3 ${url}`],
         ['audioMP3DOC', `${usedPrefix}playdoc ${url}`],
-        ['videoMP4', `${usedPrefix}video ${url}`], 
+        ['videoMP4', `${usedPrefix}videoMP4DOC ${url}`], 
         ['videoMP4DOC', `${usedPrefix}playdoc2 ${url}`]
         ], null, [['Canal', 'https://whatsapp.com/channel/0029VaJL0xn0LKZL7FtiRs1e']], m);
 
