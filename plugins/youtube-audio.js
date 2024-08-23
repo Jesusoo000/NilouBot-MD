@@ -37,7 +37,7 @@ await m.react(done)
 } catch {
 await m.reply(`✘ *Ocurrío un error*`)
 }}}
-handler.help = ['Audio']
+handler.help = ['audioMP3']
 handler.tags = ['descargas']
 handler.customPrefix = /^(2|audio|Audio)/
 handler.command = new RegExp
